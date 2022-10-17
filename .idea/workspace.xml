@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="Решение первой задачи">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/task1/BubbleSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/task1/SelectionSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/task1/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/task1/SorterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VNSH-task1" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +47,8 @@
     "last_opened_file_path": "C:/Users/Atlas/IdeaProjects/untitled",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665983801260</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Решение первой задачи">
+      <created>1666022467686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666022467686</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Empty project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Empty project" />
+    <MESSAGE value="Решение первой задачи" />
+    <option name="LAST_COMMIT_MESSAGE" value="Решение первой задачи" />
   </component>
 </project>
