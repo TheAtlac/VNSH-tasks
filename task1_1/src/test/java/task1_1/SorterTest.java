@@ -1,4 +1,4 @@
-package tasks.task1;
+package task1_1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,8 +15,8 @@ public class SorterTest {
      */
     public static Stream<Arguments> sorters() {
 //      ToDo:
-//      return Stream.of(Arguments.of(new tasks.task1.BubbleSorter()),
-//                       Arguments.of(new tasks.task1.SelectionSorter()));
+//      return Stream.of(Arguments.of(new task1_1.BubbleSorter()),
+//                       Arguments.of(new task1_1.SelectionSorter()));
         System.out.println(Arguments.of(new BubbleSorter()));
         return Stream.of(Arguments.of(new BubbleSorter()),
                 Arguments.of(new SelectionSorter()));

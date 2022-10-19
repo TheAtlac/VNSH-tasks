@@ -1,6 +1,6 @@
-package tasks.task1;
+package task1_1;
 
-public class SelectionSorter implements Sorter {
+public class BubbleSorter implements Sorter {
     @Override
     public int[] sort(int[] numbers) {
         if (numbers == null) {
@@ -11,16 +11,18 @@ public class SelectionSorter implements Sorter {
         }
         int len = numbers.length;
         int[] copy = copyArray(numbers);
-        for (int i = 0; i < (len-1); ++i) {
-            int loc_min_ind = i;
-            for (int j = i+1; j < len; ++j) {
-                if (copy[j] < copy[loc_min_ind]) {
-                    loc_min_ind = j;
+        boolean flag = false, flag2 = false;
+        while (!flag2) {
+            for (int i = 0; i < (len - 1); ++i) {
+                if (copy[i] > copy[i + 1]) {
+                    flag = false;
+                    int temp = copy[i];
+                    copy[i] = copy[i + 1];
+                    copy[i + 1] = temp;
                 }
             }
-            int temp = copy[i];
-            copy[i] = copy[loc_min_ind];
-            copy[loc_min_ind] = temp;
+            if (flag) flag2 = true;
+            else flag = true;
         }
         return copy;
     }
