@@ -1,12 +1,11 @@
-package task1_2.models;
+package sorting.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import sorting.Sorters.BogoSorter;
+import sorting.Sorters.BubbleSorter;
+import sorting.Sorters.SelectionSorter;
 
-import task1_1.BubbleSorter;
-import task1_1.SelectionSorter;
-import task1_1.BogoSorter;
-import task1_1.Sorter;
 import java.util.Objects;
 
 @JsonIgnoreProperties(value = {"algorithm"}, allowSetters= true, ignoreUnknown = true)
@@ -31,17 +30,20 @@ public class ArrayToSort {
         this.algorithm = algorithm;
         long start = System.nanoTime();
         if (Objects.equals(algorithm, "bubble")) {
-            Sorter sorter = new BubbleSorter();
+            BubbleSorter sorter = new BubbleSorter();
             this.values = sorter.sort(values);
             long finish = System.nanoTime();
             this.time = (finish - start) / 1000;
         } else if (Objects.equals(algorithm, "selection")) {
-            Sorter sorter = new SelectionSorter();
+            SelectionSorter sorter = new SelectionSorter();
             long finish = System.nanoTime();
             this.time = (finish - start) / 1000;
             this.values = sorter.sort(values);
         } else if (Objects.equals(algorithm, "bogo")) {
-            Sorter sorter = new BogoSorter();
+            BogoSorter sorter = new BogoSorter();
+            long finish = System.nanoTime();
+            this.time = (finish - start) / 1000;
+            this.values = sorter.sort(values);
         }
 
     }
