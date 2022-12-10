@@ -1,5 +1,7 @@
 package api;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.ServletException;
@@ -8,12 +10,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Objects;
+
 import sorting.models.ArrayToSort;
-import sorting.Sort;
 
 public class FirstServlet extends HttpServlet {
     public static final String JSON_VALUE = "application/json";
@@ -35,30 +36,21 @@ public class FirstServlet extends HttpServlet {
         System.out.println(req.getMethod());
         if (Objects.equals(req.getMethod(), "'GET'")) doGet(req, resp);
         if (Objects.equals(req.getMethod(), "'POST'")) doPost(req, resp);
-//        super.service(req, resp);
+        super.service(req, resp);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println(req.getMethod());
-        System.out.println("req.getParameter(\"par1\") = " + req.getParameter("p"));
-        System.out.println("req.getParameterValues(\"par2\") = " + Arrays.toString(req.getParameterValues("par2")));
-        System.out.println("req.getServletPath() = " + req.getServletPath());
-        System.out.println("req.getPathInfo() = " + req.getPathInfo());
-        if (Objects.equals(req.getServletPath(), "/ping")) {
-            resp.setStatus(200);
-            resp.getWriter().println("pong");
-            resp.setContentType("text/plane");
-        }
+        resp.setStatus(200);
+        resp.getWriter().println("pong");
+        resp.setContentType("text/plane");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(req.getRequestURI());
-        System.out.println(req.getRequestURL());
-        System.out.println(req.getHeader("content-type"));
-        System.out.println(req.getContentType());
         resp.setContentType(JSON_VALUE);
+        System.out.println("start post");
         if (!req.getContentType().contains(JSON_VALUE)) {
             System.out.println(400);
             resp.setStatus(400);
@@ -66,17 +58,36 @@ public class FirstServlet extends HttpServlet {
 
             return;
         }
-
-        Message value = mapper.readValue(req.getInputStream(), Message.class);
-
-        if (value == null || value.getValue() == null) {
+        ArrayToSort value;
+        try {
+            value = mapper.readValue(req.getInputStream(), ArrayToSort.class);
+        } catch (Exception e) {
+            System.out.println(e);
             resp.setStatus(400);
-            mapper.writeValue(resp.getWriter(), Map.of("error", "message is null"));
+            return;
+        }
+        if (value == null || value.getValues() == null) {
+            resp.setStatus(400);
+            mapper.writeValue(resp.getWriter(), Map.of("errorMessage", "Array is null"));
             return;
         }
 
-        String message = Sort.sort(value.getValue());
-        mapper.writeValue(resp.getOutputStream(), new Message(message));
+        System.out.println("i am sorting");
+        if (req.getParameter("algorithm") != null) {
+            System.out.print("rechosed " + req.getParameter("algorithm"));
+            value.setAlgorithm(req.getParameter("algorithm"));
+        }
+
+        if (!Objects.equals(value.getAlgorithm(), "bubble") && !Objects.equals(value.getAlgorithm(),
+                "selection") && !Objects.equals(value.getAlgorithm(), "bogo")) {
+            mapper.writeValue(resp.getWriter(), Map.of("errorMessage", "Array is null"));
+            resp.setStatus(404);
+        }
+        System.out.println(mapper.writeValueAsString(value));
+        System.out.println(value.getAlgorithm());
+        System.out.println(value.getTime());
+        System.out.println(Arrays.toString(value.getValues()));
+        resp.getWriter().write(mapper.writeValueAsString(value));
         resp.setStatus(200);
     }
 

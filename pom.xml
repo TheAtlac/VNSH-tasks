@@ -6,7 +6,7 @@
   <artifactId>VNSH-tasks</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>task1_1</module>
+<!--    <module>task1_1</module>-->
     <module>task1_2_servlet</module>
   </modules>
   <packaging>pom</packaging>

@@ -15,9 +15,6 @@ public class Sort {
     public static String sort(String json) throws IOException {
         ArrayToSort deserializedArray = deserialize(json);
         String serializedArray = serialize(deserializedArray);
-//        System.out.println("serializedCar = " + serializedArray);
-//
-//        ArrayToSort ResultArray = deserialize(serializedArray);
 //        System.out.println("deserializedCar = " + deserializedArray);
         return serializedArray;
 
