@@ -33,7 +33,7 @@ public class FirstServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(req.getMethod());
+//        System.out.println(req.getMethod());
         if (Objects.equals(req.getMethod(), "'GET'")) doGet(req, resp);
         if (Objects.equals(req.getMethod(), "'POST'")) doPost(req, resp);
         super.service(req, resp);
@@ -41,7 +41,7 @@ public class FirstServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(req.getMethod());
+//        System.out.println(req.getMethod());
         resp.setStatus(200);
         resp.getWriter().println("pong");
         resp.setContentType("text/plane");
@@ -50,7 +50,7 @@ public class FirstServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType(JSON_VALUE);
-        System.out.println("start post");
+//        System.out.println("start post");
         if (!req.getContentType().contains(JSON_VALUE)) {
             System.out.println(400);
             resp.setStatus(400);
@@ -72,7 +72,7 @@ public class FirstServlet extends HttpServlet {
             return;
         }
 
-        System.out.println("i am sorting");
+//        System.out.println("i am sorting");
         if (req.getParameter("algorithm") != null) {
             System.out.print("rechosed " + req.getParameter("algorithm"));
             value.setAlgorithm(req.getParameter("algorithm"));
@@ -83,10 +83,10 @@ public class FirstServlet extends HttpServlet {
             mapper.writeValue(resp.getWriter(), Map.of("errorMessage", "Array is null"));
             resp.setStatus(404);
         }
-        System.out.println(mapper.writeValueAsString(value));
-        System.out.println(value.getAlgorithm());
-        System.out.println(value.getTime());
-        System.out.println(Arrays.toString(value.getValues()));
+//        System.out.println(mapper.writeValueAsString(value));
+//        System.out.println(value.getAlgorithm());
+//        System.out.println(value.getTime());
+//        System.out.println(Arrays.toString(value.getValues()));
         resp.getWriter().write(mapper.writeValueAsString(value));
         resp.setStatus(200);
     }
