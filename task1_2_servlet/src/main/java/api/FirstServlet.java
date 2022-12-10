@@ -74,7 +74,7 @@ public class FirstServlet extends HttpServlet {
 
 //        System.out.println("i am sorting");
         if (req.getParameter("algorithm") != null) {
-            System.out.print("rechosed " + req.getParameter("algorithm"));
+//            System.out.print("rechosed " + req.getParameter("algorithm"));
             value.setAlgorithm(req.getParameter("algorithm"));
         }
 
