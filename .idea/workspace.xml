@@ -4,22 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="добавил test.yml">
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/SongsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/config/SampleConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/HealthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SampleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/TestPrototypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="01_02_Servlet" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,13 +75,71 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "temurin-11",
+    "last_opened_file_path": "C:/Users/Atlas/IdeaProjects/tasks/NSHI_HomeWork",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.SongsApplication">
+    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.DemoApplication" />
+      <module name="task1_3_Spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.SongsApplication" />
+      <module name="task1_3_Spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat: task1_3_Spring" type="com.poratu.idea.plugins.tomcat" temporary="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="/task1_3_Spring" />
+      <option name="docBase" value="$PROJECT_DIR$/task1_3_Spring/src/main/webapp" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.84" />
+          <option name="path" value="$APPLICATION_HOME_DIR$/Tomcat 8.5/apache-tomcat-8.5.84" />
+          <option name="version" value="8.5.84.0" />
+        </TomcatInfo>
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SongsApplication" />
+        <item itemvalue="Smart Tomcat.Tomcat: task1_3_Spring" />
+        <item itemvalue="Application.DemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,6 +149,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665983561391</updated>
     </task>
+    <task id="LOCAL-00001" summary="Сервлет">
+      <created>1670687904791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670687904791</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -55,10 +164,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="01_02_Servlet" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Сервлет" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сервлет" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/VNSH_tasks$Main.ic" NAME="Main Coverage Results" MODIFIED="1668321055829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>task1_2.*</FILTER>
+    </SUITE>
   </component>
 </project>
