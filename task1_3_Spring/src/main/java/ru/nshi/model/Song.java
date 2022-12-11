@@ -5,7 +5,7 @@ public class Song {
 
     private String name;
 
-    private int auditors;
+    private int auditions;
 
     private int id;
 
@@ -25,12 +25,12 @@ public class Song {
         this.name = name;
     }
 
-    public int getAuditors() {
-        return auditors;
+    public int getAuditions() {
+        return auditions;
     }
 
-    public void setAuditors(int auditors) {
-        this.auditors = auditors;
+    public void setAuditions(int auditors) {
+        this.auditions = auditors;
     }
 
     public int getId() {
@@ -40,4 +40,6 @@ public class Song {
     public void setId(int id) {
         this.id = id;
     }
+
+    public void listen(int auditions) {this.auditions += auditions;}
 }

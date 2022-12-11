@@ -3,17 +3,18 @@ package ru.nshi.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import ru.nshi.error.SongException;
 import ru.nshi.error.SongNotFoundException;
 import ru.nshi.error.SongValidationException;
 import ru.nshi.model.Error;
+import ru.nshi.model.ListenRequest;
 import ru.nshi.model.Song;
 import ru.nshi.service.SongService;
 
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 @RestController
 public class SongControllerImpl implements SongController {
@@ -51,16 +52,27 @@ public class SongControllerImpl implements SongController {
     }
 
     @Override
-    public List<Song> getSortedSongsByAuditions() {
-        List<Song> songs = service.getSongs();
-        songs.sort(new Comparator<Song>() {
-            @Override
-            public int compare(Song song1, Song song2) {
-                return song2.getAuditors() - song1.getAuditors();
-            }
-        });
-        return songs;
+    public List<Song> getSortedSongsByAuditions(Integer limit) {
+        return service.getSortedSongsByAuditions(limit);
     }
+
+    @Override
+    public List<Song> listenSongByIds(ListenRequest listenRequest) {
+        List<Integer> ids = listenRequest.getSongs();
+        for (Integer id : ids) {
+            checkId(id);
+        }
+        checkAditions(listenRequest.getAuditions());
+        return service.listenSongByIds(listenRequest);
+    }
+
+    @Override
+    public Song listenSongById(Integer id, ListenRequest listenRequest) {
+        checkAditions(listenRequest.getAuditions());
+        checkId(id);
+        return service.listenSongById(id, listenRequest);
+    }
+
 
     @ExceptionHandler(SongValidationException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -81,22 +93,26 @@ public class SongControllerImpl implements SongController {
     }
 
     void checkId(Integer id) {
-        if (id == null) {
-            throw new SongValidationException("song id cannot be null");
+        if (id == null || id < 1) {
+            throw new SongValidationException("error.message");
         }
-        if (id < 1) {
-            throw new SongValidationException("song id cannot be less than 1");
+    }
+
+    void checkAditions(Integer auditions) {
+        if (auditions == null || auditions < 0) {
+            throw new SongValidationException("error.message");
         }
+
     }
 
     void checkSong(Song song) {
         if (song == null || song.getName() == null || song.getName().isEmpty()
                 || song.getArtistName() == null || song.getArtistName().isEmpty()) {
-            throw new SongValidationException("song or song name or artist name cannot be null");
+            throw new SongValidationException("error.message");
         }
-        int auditors = song.getAuditors();
-        if (auditors < 0) {
-            throw new SongValidationException("count of auditors cannot less than 0");
+        int auditions = song.getAuditions();
+        if (auditions < 0) {
+            throw new SongValidationException("error.message");
         }
     }
 }

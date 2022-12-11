@@ -1,5 +1,7 @@
 package ru.nshi.service;
 
+import org.springframework.web.bind.annotation.RequestParam;
+import ru.nshi.model.ListenRequest;
 import ru.nshi.model.Song;
 
 import java.util.List;
@@ -14,6 +16,12 @@ public interface SongService {
     Song updateSongById(Integer id, Song song);
 
     Song deleteSongById(Integer id);
+
+    List<Song> getSortedSongsByAuditions(Integer limit);
+
+    List<Song> listenSongByIds(ListenRequest listenRequest);
+    Song listenSongById(Integer id, ListenRequest listenRequest);
+
 
 //    Song doHandleSong(Song song);
 }

@@ -1,5 +1,6 @@
 package ru.nshi.repository;
 
+import ru.nshi.model.ListenRequest;
 import ru.nshi.model.Song;
 
 import java.util.List;
@@ -14,4 +15,10 @@ public interface SongRepository {
     Song updateSongById(Integer id, Song song);
 
     Song deleteSongById(Integer id);
+
+    List<Song> getSortedSongsByAuditions(Integer limit);
+
+    List<Song> listenSongByIds(ListenRequest listenRequest);
+
+    Song listenSongById(Integer id, ListenRequest listenRequest);
 }

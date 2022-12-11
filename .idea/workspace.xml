@@ -4,33 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="добавил test.yml">
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/SongsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/config/SampleConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/HealthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SampleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/TestPrototypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="Выполнено 1 задание">
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/ListenRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/HealthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670687904791</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Выполнено 1 задание">
+      <created>1670761047346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670761047346</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +165,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="01_02_Servlet" />
+                        <option value="01_03_Spring" />
                       </list>
                     </value>
                   </entry>
@@ -184,7 +179,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Сервлет" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сервлет" />
+    <MESSAGE value="Выполнено 1 задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнено 1 задание" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VNSH_tasks$Main.ic" NAME="Main Coverage Results" MODIFIED="1668321055829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
