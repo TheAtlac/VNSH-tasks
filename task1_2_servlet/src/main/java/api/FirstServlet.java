@@ -41,7 +41,10 @@ public class FirstServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        System.out.println(req.getMethod());
+        if (!Objects.equals(req.getServletPath(), "/ping")) {
+            mapper.writeValue(resp.getWriter(), Map.of("errorMessage", "Array is null"));
+            resp.setStatus(404);
+        }
         resp.setStatus(200);
         resp.getWriter().println("pong");
         resp.setContentType("text/plane");
@@ -49,12 +52,15 @@ public class FirstServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (!Objects.equals(req.getServletPath(), "/sorting")) {
+            mapper.writeValue(resp.getWriter(), Map.of("errorMessage", "Array is null"));
+            resp.setStatus(404);
+        }
         resp.setContentType(JSON_VALUE);
-//        System.out.println("start post");
         if (!req.getContentType().contains(JSON_VALUE)) {
             System.out.println(400);
             resp.setStatus(400);
-            mapper.writeValue(resp.getWriter(), Map.of("error", "Expected " + JSON_VALUE));
+            mapper.writeValue(resp.getWriter(), Map.of("errorMessage", "Array is null " + JSON_VALUE));
 
             return;
         }
@@ -62,7 +68,7 @@ public class FirstServlet extends HttpServlet {
         try {
             value = mapper.readValue(req.getInputStream(), ArrayToSort.class);
         } catch (Exception e) {
-            System.out.println(e);
+            mapper.writeValue(resp.getWriter(), Map.of("errorMessage", "Array is null"));
             resp.setStatus(400);
             return;
         }

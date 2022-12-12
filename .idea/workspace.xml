@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="Сервлет">
+    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="добавлено тестирование&#10;исправлены ошибки с создание песни с пустым именем или артистом&#10;исправлена ошибка с прослушивание 0 раз">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_2_servlet/src/main/java/api/FirstServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_2_servlet/src/main/java/api/FirstServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +18,19 @@
       <option value="module" />
     </option>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="01_03_Spring" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -36,16 +49,109 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Atlas/IdeaProjects/tasks/NSHI_HomeWork&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Smart Tomcat.Tomcat: task1_2_servlet">
+    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.DemoApplication" />
+      <module name="task1_3_Spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.SongsApplication" />
+      <module name="task1_3_Spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1_3_Spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nshi.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.controller.SongControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat: task1_2_servlet" type="com.poratu.idea.plugins.tomcat" temporary="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="/task1_2_servlet" />
+      <option name="docBase" value="$PROJECT_DIR$/task1_2_servlet/src/main/webapp" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.84" />
+          <option name="path" value="$APPLICATION_HOME_DIR$/Tomcat 8.5/apache-tomcat-8.5.84" />
+          <option name="version" value="8.5.84.0" />
+        </TomcatInfo>
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat: task1_3_Spring" type="com.poratu.idea.plugins.tomcat" temporary="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="/task1_3_Spring" />
+      <option name="docBase" value="$PROJECT_DIR$/task1_3_Spring/src/main/webapp" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.84" />
+          <option name="path" value="$APPLICATION_HOME_DIR$/Tomcat 8.5/apache-tomcat-8.5.84" />
+          <option name="version" value="8.5.84.0" />
+        </TomcatInfo>
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Smart Tomcat.Tomcat: task1_2_servlet" />
+        <item itemvalue="JUnit.SongControllerTest" />
+        <item itemvalue="Application.SongsApplication" />
+        <item itemvalue="Smart Tomcat.Tomcat: task1_3_Spring" />
+        <item itemvalue="Application.DemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +168,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670687904791</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Выполнено 1 задание">
+      <created>1670761047346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670761047346</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Выполнено 2 и 3 задания">
+      <created>1670770546363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670770546363</updated>
+    </task>
+    <task id="LOCAL-00004" summary="добавил test.yml">
+      <created>1670770792047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670770792047</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,7 +217,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Сервлет" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сервлет" />
+    <MESSAGE value="Выполнено 1 задание" />
+    <MESSAGE value="Выполнено 2 и 3 задания" />
+    <MESSAGE value="добавил test.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил test.yml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VNSH_tasks$Main.ic" NAME="Main Coverage Results" MODIFIED="1668321055829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
