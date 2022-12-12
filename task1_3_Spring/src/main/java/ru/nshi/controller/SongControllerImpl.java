@@ -99,20 +99,17 @@ public class SongControllerImpl implements SongController {
     }
 
     void checkAditions(Integer auditions) {
-        if (auditions == null || auditions < 0) {
+        if (auditions == null || auditions <= 0) {
             throw new SongValidationException("error.message");
         }
-
     }
 
+
     void checkSong(Song song) {
-        if (song == null || song.getName() == null || song.getName().isEmpty()
-                || song.getArtistName() == null || song.getArtistName().isEmpty()) {
+        if (song == null || song.getName() == null || song.getName().isBlank()
+                || song.getArtistName() == null || song.getArtistName().isBlank()) {
             throw new SongValidationException("error.message");
         }
-        int auditions = song.getAuditions();
-        if (auditions < 0) {
-            throw new SongValidationException("error.message");
-        }
+        checkAditions(song.getAuditions());
     }
 }

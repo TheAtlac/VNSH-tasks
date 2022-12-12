@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="Выполнено 2 и 3 задания">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
+    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="добавил test.yml">
+      <change afterPath="$PROJECT_DIR$/task1_3_Spring/src/test/java/ru/nshi/controller/SongControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/SongsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/SongsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/config/SampleConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/HealthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +56,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "temurin-11",
-    "last_opened_file_path": "C:/Users/Atlas/IdeaProjects/tasks/NSHI_HomeWork",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Atlas/IdeaProjects/tasks/NSHI_HomeWork&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.SongsApplication">
+}</component>
+  <component name="RunManager" selected="JUnit.SongControllerTest">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.nshi.DemoApplication" />
       <module name="task1_3_Spring" />
@@ -88,6 +96,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SongControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1_3_Spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nshi.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.controller.SongControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat: task1_3_Spring" type="com.poratu.idea.plugins.tomcat" temporary="true">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
@@ -109,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SongControllerTest" />
         <item itemvalue="Application.SongsApplication" />
         <item itemvalue="Smart Tomcat.Tomcat: task1_3_Spring" />
         <item itemvalue="Application.DemoApplication" />
@@ -145,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670770546363</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="добавил test.yml">
+      <created>1670770792047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670770792047</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,7 +206,8 @@
     <MESSAGE value="Сервлет" />
     <MESSAGE value="Выполнено 1 задание" />
     <MESSAGE value="Выполнено 2 и 3 задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнено 2 и 3 задания" />
+    <MESSAGE value="добавил test.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил test.yml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

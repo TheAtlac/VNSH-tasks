@@ -13,7 +13,7 @@ public class HealthController {
     @GetMapping(value = "/ping", produces = "application/json")
     public String ping() {
         System.out.println("try ping");
-        return "{\"status\" = \"UP\"}";
+        return "{\"status\": \"UP\"}";
     }
 }
 

@@ -49,6 +49,7 @@ public class SongRepositoryImpl implements SongRepository {
 
     @Override
     public Song deleteSongById(Integer id) {
+        Song oldValue = getSongById(id);
         Song result = data.remove(id);
         if (result == null) {
             throw new SongNotFoundException("error.message");

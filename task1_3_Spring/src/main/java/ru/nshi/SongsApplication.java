@@ -11,14 +11,5 @@ public class SongsApplication {
         ApplicationContext context =
                 SpringApplication.run(SongsApplication.class, args);
 
-
-
-
-//        String[] beanDefinitionNames = context.getBeanDefinitionNames();
-//        for (String beanDefinitionName : beanDefinitionNames) {
-//            System.out.println(beanDefinitionName + " = " + context.getBean(beanDefinitionName)
-//                .getClass()
-//                .getSimpleName());
-//        }
     }
 }

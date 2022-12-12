@@ -2,12 +2,22 @@ package ru.nshi.model;
 
 public class Song {
     private String artistName;
-
     private String name;
-
     private int auditions;
-
     private int id;
+
+    public Song(String artistName, String name, Integer auditions) {
+        this.artistName = artistName;
+        this.name = name;
+        this.auditions = auditions;
+    }
+
+    public Song() {
+        this.artistName = null;
+        this.name = null;
+        this.auditions = 0;
+
+    }
 
     public String getArtistName() {
         return artistName;
@@ -42,4 +52,14 @@ public class Song {
     }
 
     public void listen(int auditions) {this.auditions += auditions;}
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "artistName='" + artistName + '\'' +
+                ", name='" + name + '\'' +
+                ", auditions=" + auditions +
+                ", id=" + id +
+                '}';
+    }
 }
