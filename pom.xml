@@ -6,7 +6,7 @@
   <artifactId>VNSH-tasks</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>task1_3_Spring</module>
+    <module>task4_Spring</module>
   </modules>
   <packaging>pom</packaging>
 
