@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthController {
     public final static String MAPPING  = "/ping";
 
-    @GetMapping(value = "/ping", produces = "application/json")
+    @GetMapping(value = MAPPING)
     public String ping() {
-        System.out.println("try ping");
-        return "{\"status\": \"UP\"}";
+        return "pong";
     }
 }
 

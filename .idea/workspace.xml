@@ -4,38 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="исправлен путь до обработчика&#10;испралено отсутствие сообщения об ошибке">
-      <change afterPath="$PROJECT_DIR$/task4_Spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/model/Artist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/repository/ArtistMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="01a1b804-c339-4243-af4d-0f16cefd3b25" name="Changes" comment="Задание 4 - База данных">
+      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/model/ExcelFileExporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/service/FooService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/task4_Spring/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/SongsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/HealthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/controller/SongControllerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/error/SongValidationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Error.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/ListenRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/model/Song.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/repository/SongRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/java/ru/nshi/service/SongServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1_3_Spring/src/test/java/ru/nshi/controller/SongControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task4_Spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/task4_Spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/controller/ArtistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/controller/ArtistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/controller/ArtistControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/controller/ArtistControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task4_Spring/src/main/java/ru/nshi/controller/HealthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,14 +59,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/Atlas/IdeaProjects/VNSH-tasks/task4_Spring/src/main/java/ru/nshi/service",
+    "last_opened_file_path": "D:/coding/projects/IdeaProjects/VNSH-tasks",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "6bc84c17762bfc177c15c2a9534ea8f7",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -104,7 +92,7 @@
       <recent name="ru.nshi.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SongsApplication">
+  <component name="RunManager" selected="Spring Boot.SongsApplication">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.nshi.DemoApplication" />
       <module name="task1_3_Spring" />
@@ -119,8 +107,7 @@
       </method>
     </configuration>
     <configuration name="SongsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.nshi.SongsApplication" />
-      <module name="task1_3_Spring" />
+      <option name="MAIN_CLASS_NAME" value="task4_Spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.nshi.*" />
@@ -162,6 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SongsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="task4_Spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nshi.SongsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat: task1_3_Spring" type="com.poratu.idea.plugins.tomcat" temporary="true">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
@@ -186,7 +180,6 @@
         <item itemvalue="Application.SongsApplication" />
         <item itemvalue="JUnit.SongControllerTest.fullTest" />
         <item itemvalue="JUnit.SongControllerTest" />
-        <item itemvalue="Smart Tomcat.Tomcat: task1_3_Spring" />
         <item itemvalue="Application.DemoApplication" />
       </list>
     </recent_temporary>
@@ -199,6 +192,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665983561391</updated>
+      <workItem from="1710587995063" duration="501000" />
+      <workItem from="1713252726756" duration="749000" />
     </task>
     <task id="LOCAL-00001" summary="Сервлет">
       <created>1670687904791</created>
@@ -228,8 +223,18 @@
       <option name="project" value="LOCAL" />
       <updated>1670770792047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Задание 4 - База данных">
+      <created>1684200007816</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684200007816</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -259,7 +264,8 @@
     <MESSAGE value="Выполнено 1 задание" />
     <MESSAGE value="Выполнено 2 и 3 задания" />
     <MESSAGE value="добавил test.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил test.yml" />
+    <MESSAGE value="Задание 4 - База данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 4 - База данных" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
